@@ -1,10 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import TargetTemp from './components/TargetTemp'
 function App() {
-  return (
- <div>hello</div>
-  );
+  const props = {
+    min: 2,
+    max: 100,
+    temperature: 70,
+  };
+  return <TargetTemp{...props} />;
 }
 
 export default App;
