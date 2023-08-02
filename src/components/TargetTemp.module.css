@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
-
 }
 
 .container .heater {
@@ -61,6 +60,12 @@
   transform-origin: bottom;
 }
 
+.container .temperature {
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+  font-weight: 500;
+}
+
 .container .heater .indicator {
   position: absolute;
   height: 5px;
@@ -69,7 +74,7 @@
   justify-content: center;
 }
 
-.indicator::before {
+.container .heater .indicator::before {
   content: "";
   position: absolute;
   height: 100%;
@@ -80,17 +85,11 @@
   z-index: 2;
 }
 
-.indicator .temp {
+.container .heater .indicator .temp {
   position: absolute;
   height: 5rem;
   width: 3px;
   background-color: var(--red-color);
   bottom: 0;
   transform-origin: bottom;
-}
-
-.container .temperature {
-  font-family: "Courier New", Courier, monospace;
-  font-size: large;
-  font-weight: 500;
 }
