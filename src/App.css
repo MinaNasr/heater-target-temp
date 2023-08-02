@@ -3,6 +3,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100hv;
   background-color: var(--primary-color);
+  height: 100vh;
 }

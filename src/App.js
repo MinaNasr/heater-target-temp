@@ -1,12 +1,12 @@
 import "./App.css";
-import TargetTemp from './components/TargetTemp'
+import TargetTemp from "./components/TargetTemp";
 function App() {
   const props = {
-    min: 2,
+    min: 0,
     max: 100,
-    temperature: 70,
+    temperature: 15,
   };
-  return <TargetTemp{...props} />;
+  return <TargetTemp {...props} />;
 }
 
 export default App;
